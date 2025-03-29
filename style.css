@@ -1,0 +1,96 @@
+h1 {
+    color: #79a4a8; /* or any color you prefer */
+    font-family: 'Alexandria', sans-serif;
+    font-weight: bold;
+  }
+  
+@font-face {
+    font-family: 'Alexandria';
+    src: url('fonts/Alexandria-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+  }
+  
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  input[type="text"] {
+    padding: 12px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  input::placeholder {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: bold;
+    color: #aaa; /* Optional: adjust color */
+  }  
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #79a4a8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.2s ease;
+    font-family: 'Alexandria', sans-serif;
+  font-weight: regular;
+
+  }
+  
+  button:hover {
+    background-color: #678d90;
+  }
+  
+  #card {
+    background-image: url('images/card-background.jpg');
+    background-size: contain;         /* ✅ Show full image without cropping */
+    background-repeat: no-repeat;     /* ✅ Prevent repeat if image doesn't fill */
+    background-position: center;
+    aspect-ratio: 3 / 2;              /* ✅ Maintain image aspect ratio */
+    width: 100%;
+    height: auto;                     /* ✅ Automatically scale height */
+    border-radius: 12px;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  #userName {
+    font-family: 'Alexandria', sans-serif;
+    font-size: clamp(14px, 1.6vw, 22px); /* 🔽 Smaller font size */
+    font-weight: bold;
+    color: #79a4a8;
+    position: absolute;
+    bottom: 20%; /* 🔼 Slightly higher for better alignment */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  
+  
+  

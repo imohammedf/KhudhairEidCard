@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Greeting Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Alexandria font (local use) -->
+  <style>
+    @font-face {
+      font-family: 'Alexandria';
+      src: url('fonts/Alexandria-Bold.ttf') format('truetype');
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>بطاقة التهنئة الخاصة بأسرة الخضير - الأحساء/المبرز</h1>
+    
+    <input type="text" id="nameInput" placeholder="اكتب اسمك هنا">
+    <button onclick="updateCard()">اضغط للإنشاء</button>
+
+    <div id="card">
+      <span id="userName">[Your Name]</span>
+    </div>
+
+    <button onclick="downloadCard()">تنزيل البطاقة</button>
+  </div>
+
+  <!-- Hidden canvas for high-resolution download -->
+  <canvas id="canvas" style="display: none;"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
